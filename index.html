@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+
+  <meta name="description" content="Calculadora HTML / CSS / JS">
+  <meta name="keywords" content="calculadora,html,css,js">
+  <meta name="author" content="Nikolas Magno">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <main>
+    <section>
+      
+      <form action="" name="calcForm" method="POST">
+        <input type="text" class="visor" id="visor"><!-- Visor -->
+      
+      
+        <table>
+          <tr>
+            <td><input type="button" class="num" value="AC" onclick="limpar()"></td>
+            <td><input type="button" class="num" value="<" onclick="apagar()"></td>
+            <td><input type="button" class="num" value="%" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="/" onclick="botao(value)"></td>
+          </tr><!-- Botões -->
+          
+          <tr>
+            <td><input type="button" class="num" value="7" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="8" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="9" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="*" onclick="botao(value)"></td>
+          </tr><!-- Botões -->
+          
+          <tr>
+            <td><input type="button" class="num" value="4" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="5" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="6" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="-" onclick="botao(value)"></td>
+          </tr><!-- Botões -->
+          
+          <tr>
+            <td><input type="button" class="num" value="1" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="2" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="3" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="+" onclick="botao(value)"></td>
+          </tr><!-- Botões -->
+          
+          <tr>
+            <td><input type="button" class="num zero" value="0" onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="." onclick="botao(value)"></td>
+            <td><input type="button" class="num" value="=" onclick="calcule()"></td>
+          </tr><!-- Botões -->
+        </table>
+      </form><!-- Calculadora -->
+
+    </section> 
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
